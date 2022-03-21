@@ -8,6 +8,7 @@ html {box-sizing: border-box;}
   --cl-very-dark-blue: hsl(243, 87%, 12%);
   --cl-desaturated-blue: hsl(238, 22%, 44%);
   --cl-bright-blue: hsl(224, 93%, 58%);
+  --cl-bright-blue-active: hsl(224, 98%, 64%);
   --cl-moderate-cyan: hsl(170, 45%, 43%);
   --cl-light-grayish-blue: hsl(240, 75%, 98%);
   --cl-light-gray: hsl(0, 0%, 75%);
@@ -31,11 +32,16 @@ nav {
 
 button {
   font-family: "Raleway";
+  cursor: pointer;
 }
 
 .header_nav_items li {
   font: 400 .85rem "Raleway";
   display: inline;
+}
+
+.header_nav_items li:hover {
+  cursor: pointer;
 }
 
 .header_nav_items li + li {
@@ -109,6 +115,12 @@ button {
   background-color: var(--cl-bright-blue);
   border: none;
   border-radius: .2rem;
+  transition: background-color .5s;
+}
+
+.start_row button:hover {
+  background-color: var(--cl-bright-blue-active);
+  transition: background-color .5s;
 }
 
 .gray_background {
@@ -144,6 +156,12 @@ button {
   font-size: .9rem;
   color: var(--cl-moderate-cyan);
   border-bottom: 2px solid var(--cl-moderate-cyan);
+  transition: opacity .5s;
+}
+
+.feature_row button:hover {
+  opacity: .8;
+  transition: opacity .5s;
 }
 
 .feature_row button::after {
@@ -245,6 +263,12 @@ button {
   background-color: var(--cl-bright-blue);
   border: none;
   border-radius: .2rem;
+  transition: background-color .5s;
+}
+
+.letter_row button:hover {
+  background-color: var(--cl-bright-blue-active);
+  transition: background-color .5s;
 }
 
 footer {
@@ -284,12 +308,27 @@ footer ul {
 
 footer li {
   margin-bottom: 1rem;
+  transition: color .5s;
+}
+
+footer li:hover {
+  cursor: pointer;
+  color: var(--cl-desaturated-blue);
+  transition: color .5s;
 }
 
 ion-icon {
   padding: .5rem;
   border: 1px solid var(--cl-white);
   border-radius: 10rem;
+  transition: color .5s, border-color .5s;
+}
+
+ion-icon:hover {
+  cursor: pointer;
+  color: var(--cl-desaturated-blue);
+  border-color: var(--cl-desaturated-blue);
+  transition: color .5s, border-color .5s;
 }
 
 ion-icon + ion-icon {
