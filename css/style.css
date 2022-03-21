@@ -13,6 +13,7 @@ html {box-sizing: border-box;}
   --cl-light-grayish-blue: hsl(240, 75%, 98%);
   --cl-light-gray: hsl(0, 0%, 75%);
   --cl-white: hsl(0, 0%, 100%);
+  --cl-red: hsl(0, 100%, 50%);
 
   --fs-default: 16px;
 
@@ -342,6 +343,17 @@ ion-icon + ion-icon {
 
 .desktop-show {
   display: none;
+}
+
+.start_row .error-start {
+  display: none;
+  font-size: .8rem;
+  color: var(--cl-red);
+}
+
+.get_letter .error-start {
+  display: none;
+  font-size: .8rem;
 }
 
 @media all and (min-width: 768px) {

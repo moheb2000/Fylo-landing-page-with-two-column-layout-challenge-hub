@@ -9,6 +9,7 @@
   <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+  <script src="js/script.js" async></script>
 </head>
 
 <body>
@@ -30,8 +31,9 @@
         <p>Fylo stores your most important files in one secure location. Access them wherever you need, share
           and collaborate with friends, family, and co-workers.</p>
         <div class="get_email">
-          <input type="text" placeholder="Enter your email">
-          <button>Get Started</button>
+          <input id="mail_start" type="text" placeholder="Enter your email">
+          <button id="start_btn">Get Started</button>
+          <p id="start_error" class="error-start">Please check your email</p>
         </div>
       </div>
     </section>
@@ -69,8 +71,9 @@
           our support team would be happy to help you.</p>
       </div>
       <div class="get_letter">
-        <input type="text" placeholder="email@example.com">
-        <button>Get Started For Free</button>
+        <input id="mail_letter" type="text" placeholder="email@example.com">
+        <p id="letter_error" class="error-start">Please check your email</p>
+        <button id="letter_btn">Get Started For Free</button>
       </div>
     </section>
   </main>
